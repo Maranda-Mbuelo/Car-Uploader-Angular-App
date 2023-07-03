@@ -1,0 +1,97 @@
+<section>
+
+  <div class="upload-car-container">
+    <h2>Upload Car</h2>
+    <form class="my-form" (submit)="uploadCar()">
+      <div class="form-group">
+        <label for="carName">Car Name</label>
+        <input type="text" id="carName" [(ngModel)]="car.carName" name="carName" required>
+      </div>
+      <div class="form-group">
+        <label for="carModel">Car Model</label>
+        <input type="text" id="carModel" [(ngModel)]="car.carModel" name="carModel" required>
+      </div>
+      <div class="form-group">
+        <label for="carType">Car Type</label>
+        <input type="text" id="carType" [(ngModel)]="car.carType" name="carType" required placeholder=" Pick-Up /Sedan /Coupe /HatchBack /Wagon /Tourin">
+      </div>
+      <div class="form-group">
+        <label for="yearName">Year Name</label>
+        <input type="text" id="yearName" [(ngModel)]="car.yearName" name="yearName" required placeholder="Year Name">
+      </div>
+      <div class="form-group">
+        <label for="carYearMake">Car Year Make</label>
+        <input type="number" id="carYearMake" [(ngModel)]="car.carYearMake" name="carYearMake" required placeholder="Year Made">
+      </div>
+      <div class="form-group">
+        <label for="carTransmission">Car Transmission</label>
+        <input type="text" id="carTransmission" [(ngModel)]="car.carTransmission" name="carTransmission" required placeholder=" Manual / Automatic / Dual Clutch">
+      </div>
+      <div class="form-group">
+        <label for="carEngineType">Car Engine Type</label>
+        <input type="text" id="carEngineType" [(ngModel)]="car.carEngineType" name="carEngineType" required placeholder=" Engine Type">
+      </div>
+      <div class="form-group">
+        <label for="carNoOfGears">Car Number of Gears</label>
+        <input type="number" id="carNoOfGears" [(ngModel)]="car.carNoOfGears" name="carNoOfGears" required placeholder=" Number of gears">
+      </div>
+      <div class="form-group">
+        <label for="carHorsePower">Car Horse Power</label>
+        <input type="number" id="carHorsePower" [(ngModel)]="car.carHorsePower" name="carHorsePower" required placeholder=" Horse Power">
+      </div>
+      <div class="form-group">
+        <label for="carTorque">Car Torque</label>
+        <input type="number" id="carTorque" [(ngModel)]="car.carTorque" name="carTorque" required placeholder=" Torque">
+      </div>
+      <div class="form-group">
+        <label for="carKilowatts">Car Kilowatts</label>
+        <input type="number" id="carKilowatts" [(ngModel)]="car.carKilowatts" name="carKilowatts" required placeholder=" Killowatts">
+      </div>
+      <div class="form-group">
+        <label for="carEngineSize">Car Engine Size</label>
+        <input type="number" id="carEngineSize" [(ngModel)]="car.carEngineSize" name="carEngineSize" required E.g 1, 2, 3, 4...>
+      </div>
+      <div class="form-group">
+        <label for="carNoOfSeats">Car Number of Seats</label>
+        <input type="number" id="carNoOfSeats" [(ngModel)]="car.carNoOfSeats" name="carNoOfSeats" required>
+      </div>
+      <div class="form-group">
+        <label for="carFuelConsuption">Car Fuel Consumption</label>
+        <input type="number" id="carFuelConsuption" [(ngModel)]="car.carFuelConsuption" name="carFuelConsuption" required>
+      </div>
+      <div class="form-group">
+        <label for="carFuelTankSize">Car Fuel Tank Size</label>
+        <input type="number" id="carFuelTankSize" [(ngModel)]="car.carFuelTankSize" name="carFuelTankSize" required>
+      </div>
+      <div class="form-group">
+        <label for="carAcceleration">Car Acceleration</label>
+        <input type="number" id="carAcceleration" [(ngModel)]="car.carAcceleration" name="carAcceleration" required>
+      </div>
+      <div class="form-group">
+        <label for="carPrice">Car Price</label>
+        <input type="number" id="carPrice" [(ngModel)]="car.carPrice" name="carPrice" required>
+      </div>
+      <div class="form-group">
+        <label for="carFeaturedImageUrl">Car Featured Image URL</label>
+        <input type="text" id="carFeaturedImageUrl" [(ngModel)]="car.carFeaturedImageUrl" name="carFeaturedImageUrl" required>
+      </div>
+      <div class="form-group">
+        <label for="urlHandle">URL Handle</label>
+        <input type="text" id="urlHandle" [(ngModel)]="car.urlHandle" name="urlHandle" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" [(ngModel)]="car.author" name="author" required>
+      </div>
+      <div class="form-group">
+        <label for="carImage">Car Image</label>
+        <input type="file" id="carImage" (change)="onImageSelected($event)" accept="image/*" required>
+      </div>
+  
+      <div class="error-message" *ngIf="error">{{ error }}</div>
+  
+      <button type="submit">Upload Car</button>
+    </form>
+  </div>
+
+</section>

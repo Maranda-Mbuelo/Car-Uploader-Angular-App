@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header{
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.527);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.6% 200px;
+    transition: 0.5s ease;
+  }
+  
+  header .brand{
+    position: absolute;
+    left: 2%;
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 2s ease;
+    transition-delay: 2s ;
+  }
+  header .brand p{
+    font-family: 'Rubik Gemstones', cursive;
+    font-size: 160%;
+    color: rgb(230, 230, 230);
+  }
+  
+  .brand:hover{
+    color: white;
+    text-shadow: 0px 0px 5px yellow;
+  }
+  
+  header .navigation{
+    position: absolute;
+    right: 10%;
+    transition: 2s ease;
+  }
+
+  
+  header .navigation .navigation-items a{
+    position: relative;
+    color: #f1f1f1;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+  }
+  
+  header .navigation .navigation-items a:hover{
+    color: hsl(0, 0%, 90%);
+    filter: brightness(120%);
+    font-size: 1.07rem;
+  }
+  
+  header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #f1f1f1;
+    width: 0%;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s ease;
+  }
+  
+  
+  header .navigation .navigation-items a:hover:before{
+    width: 100%;
+  }
+  
+@media(max-width: 768px) {
+
+    header{
+        padding: 8%;
+    }
+
+    .navigation{
+        transform: scale(0);
+        display: none;
+    }
+
+    header .brand p{
+      font-size: 140%;
+    }
+}

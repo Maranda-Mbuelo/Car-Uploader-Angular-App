@@ -1,0 +1,11 @@
+<header class="myHeader">
+    <a href="" class="brand"><p>{{brand}}</p>
+    </a>
+    <div class="navigation">
+      <div class="navigation-items">
+        <ng-container *ngFor="let link of myLinks">
+          <a href="{{link.path}}">{{link.name}}</a>
+        </ng-container>
+      </div>
+    </div>
+  </header>

@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="car-blog">
+    
+    <h1>Welcome to the Car Blog</h1>
+  
+    <div class="car-list">
+        <ng-container *ngFor="let car of carsArray">
+            <div class="car-card">
+                <img [src]="car.carFeaturedImage" alt="Car Image">
+                <h2>{{ car.carName }}</h2>
+                <p>Model: {{ car.carModel }}</p>
+                <p>Type: {{ car.carType }}</p>
+                <p>Year: {{ car.yearName }}</p>
+                <button (click)="viewCar(car.id)">View Car</button>
+            </div>
+        </ng-container>
+      
+    </div>
+  </div>
+  

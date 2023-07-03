@@ -1,0 +1,8 @@
+<div class="car-details" *ngIf="car">
+  <img class="car-image" [src]="carImageUrl" alt="Car Image">
+  <h2 class="car-name">{{ car.carName }}</h2>
+  <p class="car-model">Model: {{ car.carModel }}</p>
+  <p class="car-type">Type: {{ car.carType }}</p>
+  <p class="car-year">Year: {{ car.yearName }}</p>
+  <!-- Add more car properties as needed -->
+</div>

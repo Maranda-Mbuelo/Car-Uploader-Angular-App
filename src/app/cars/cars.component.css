@@ -1,0 +1,37 @@
+.car-blog {margin-top: 10%;
+    text-align: center;
+  }
+  
+  .car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .car-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .car-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .car-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .car-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
